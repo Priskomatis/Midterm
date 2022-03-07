@@ -4,10 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
 
+    <style>
+        table, th{
+            border: 1px solid black;
+        }
+    </style>
+
+    <title> My favorite Video Games</title>
+
+</head>
+
+<body>
+    <div class="Header">
+        <h1 style="text-align:center">My favorite Video Games</h1>
+    </div>
+
+    <label for="gameTitle"> Game: </label>
+    <input type="text" id="gameTitle" placeholder="Game Title"/>
+
+    <label for="rating"> Game Rating: </label>
+    <input type="text" id="rating" placeholder="Game rating"/>
+
+    <button type="button">Add</button>
+
+
+
+    <table style="width:50%; margin-left: auto;margin-right: auto;"; >
+        <tr>
+            <th>Title</th>
+            <th>Rating</th>
+            <th>Delete</th>
+        </tr>
+
+    </table>
+    
 
     
 </body>
