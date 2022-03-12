@@ -34,11 +34,34 @@
 <script>
 
 $(document).ready(function() {
-        $("#dltbutton").click(function() {
+
+
+        $(".dltbutton").click(function() {
             console.log("sdfsdf")
     
         });
+
+        $("#addbtn").click(function() {
+            var name = $('#gameTitle').val();
+            var rate = $('#rating').val();
+            var row = "<tr><td>"
+                 + name + "</td><td>"
+                 + rate + "</td><td>"
+                 + '<button class="dltbutton" type="button">Delete</button>'  + "</td></tr>";
+            $('#tableTest').append(row);
+        });
+
+
+
+        /*var row = "<tr><td>"
+            + name + "</td><td>"
+                 + rate + "</td></tr>";*/
+
+
 });
+
+
+
 </script>
 
 
@@ -58,28 +81,10 @@ $(document).ready(function() {
         <label for="rating"> Game Rating: </label>
         <input type="text" id="rating" placeholder="Game rating"/>
 
-        <button type="button">Add</button>
+        <button id ="addbtn"type="button" class= "btn btn-outline-primary">Add</button> 
 
     </div>
     
-
-
-
-    
-
-
-
-    <!--<table id ="table">
-        
-        <tr>
-            <th>Title</th>
-            <th>Rating</th>
-            <th>
-                 <Button type="button">Delete</Button>
-            </th>
-        </tr>
-
-    </table> -->
 
     <table id="tableTest" class="table table-bordered">
 
@@ -98,7 +103,7 @@ $(document).ready(function() {
                 <td>League Of Legends</td>
                 <td>85</td>
                 <td>
-                    <button id="dltbutton" type="button" class="btn btn-outline-primary">Delete</button>
+                    <button class="dltbutton" type="button" class="btn btn-outline-primary">Delete</button>
                 </td>
             </tr>
 
@@ -106,7 +111,7 @@ $(document).ready(function() {
                 <td>Bague Of Legends</td>
                 <td>85</td>
                 <td>
-                    <button id="dltbutton" type="button" class="btn btn-outline-primary">Delete</button>
+                    <button class="dltbutton" type="button" class="btn btn-outline-primary">Delete</button>
                 </td>
             </tr>
 
@@ -114,7 +119,7 @@ $(document).ready(function() {
                 <td>Keague Of Legends</td>
                 <td>85</td>
                 <td>
-                    <button id="dltbutton" type="button" class="btn btn-outline-primary">Delete</button>
+                    <button class="dltbutton" type="button" class="btn btn-outline-primary">Delete</button>
                 </td>
             </tr> 
 
