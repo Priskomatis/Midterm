@@ -87,7 +87,7 @@ $(document).ready(function() {
     </div>
     
 
-    <table id="tableTest" class="table table-bordered">
+    <table id="mainGameTable" class="table table-bordered">
 
         <thead id="headGameTable">
 
@@ -99,7 +99,7 @@ $(document).ready(function() {
             </tr>
 
         </thead>
-        <tbdoy>
+        <tbdoy id="bodyGameTable">
 
             <tr>
                 <td>League Of Legends</td>
@@ -142,7 +142,7 @@ $(document).ready(function() {
     <script>
         function sortByName(){
             var rows, name1, name2, table, i, hasSorted, compareValue;
-            table = document.getElementById("tableTest");
+            table = document.getElementById("mainGameTable");
             hasSorted = true;
             while(hasSorted){
                 hasSorted = false;
@@ -162,11 +162,14 @@ $(document).ready(function() {
                 }
 
             }
+
+
+
         }
 
         function sortByScore(){
             var rows, score1, score2, table, i, hasSorted, compareValue;
-            table = document.getElementById("tableTest");
+            table = document.getElementById("mainGameTable");
             hasSorted = true;
             while(hasSorted){
                 hasSorted = false;
@@ -177,7 +180,7 @@ $(document).ready(function() {
                     score2 = rows[i + 1].getElementsByTagName("td")[1].outerHTML;
                     compareValue = score1.localeCompare(score2, undefined, { numeric: true }); 
                     console.log(compareValue);
-                    if(compareValue == 1){
+                    if(compareValue == -1){
                         $(rows[i + 1]).after($(rows[i]));
                         hasSorted=true;
                         break;
