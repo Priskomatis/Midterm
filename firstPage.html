@@ -128,7 +128,7 @@ $(document).ready(function() {
 
     <script>
         function sortByName(){
-            var rows, name1, name2, table, position, i, hasSorted, compareValue;
+            var rows, name1, name2, table, i, hasSorted, compareValue;
             table = document.getElementById("tableTest");
             hasSorted = true;
             while(hasSorted){
@@ -150,6 +150,31 @@ $(document).ready(function() {
 
             }
         }
+
+        function sortByScore(){
+            var rows, score1, score2, table, i, hasSorted, compareValue;
+            table = document.getElementById("tableTest");
+            hasSorted = true;
+            while(hasSorted){
+                hasSorted = false;
+                rows = table.rows;
+
+                for(i=1; i <(rows.length-1); i++){
+                    score1 = rows[i].getElementsByTagName("td")[1].outerHTML;
+                    score2 = rows[i + 1].getElementsByTagName("td")[1].outerHTML;
+                    compareValue = score1.localeCompare(score2, undefined, { numeric: true }); 
+                    console.log(compareValue);
+                    if(compareValue == 1){
+                        $(rows[i + 1]).after($(rows[i]));
+                        hasSorted=true;
+                        break;
+                    }
+
+                }
+
+            }
+        }
+        
 
     </script>
     
