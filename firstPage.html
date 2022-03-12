@@ -83,11 +83,11 @@ $(document).ready(function() {
 
     <table id="tableTest" class="table table-bordered">
 
-        <thead>
+        <thead id="headGameTable">
 
             <tr>
-                <th scope="col">Game Title</th>
-                <th scope="col">Rating</th>
+                <th scope="col" onclick="sortByName()">Game Title<i id="sortAsc"></i></th>
+                <th scope="col" onclick="sortByScore()">Rating</th>
                 <th scope="col"> Delete</th>
             </tr>
 
@@ -96,7 +96,7 @@ $(document).ready(function() {
 
             <tr>
                 <td>League Of Legends</td>
-                <td>85</td>
+                <td>6</td>
                 <td>
                     <button id="dltbutton" type="button" class="btn btn-outline-primary">Delete</button>
                 </td>
@@ -104,7 +104,7 @@ $(document).ready(function() {
 
             <tr>
                 <td>Bague Of Legends</td>
-                <td>85</td>
+                <td>80</td>
                 <td>
                     <button id="dltbutton" type="button" class="btn btn-outline-primary">Delete</button>
                 </td>
@@ -112,7 +112,7 @@ $(document).ready(function() {
 
             <tr>
                 <td>Keague Of Legends</td>
-                <td>85</td>
+                <td>55</td>
                 <td>
                     <button id="dltbutton" type="button" class="btn btn-outline-primary">Delete</button>
                 </td>
