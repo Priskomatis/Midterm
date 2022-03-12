@@ -11,8 +11,38 @@ table, th{
     margin: 0 auto !important;
 }
 
+<<<<<<< HEAD
 .carousel-inner img{
     height: 60vh;
     
 }
 
+=======
+#headGameTable{
+    border: 3px solid black;
+}
+
+#sortAsc{
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
+    position: relative;
+    top: -15px;
+    right: -5px;
+    
+}
+
+#sortDes{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #000;
+    content: "";
+    position: relative;
+    top: 15px;
+    right: -5px;
+}
+>>>>>>> 3f778ba574d7285aa98cf5d29c4dbfe20dc0675e
