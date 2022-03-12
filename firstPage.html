@@ -143,6 +143,8 @@ $(document).ready(function() {
         function sortByName(){
             var rows, name1, name2, table, i, hasSorted, compareValue;
             table = document.getElementById("mainGameTable");
+            $("#sortScore").removeClass("sortDes");
+            $("#sortName").addClass("sortDes");
             hasSorted = true;
             while(hasSorted){
                 hasSorted = false;
@@ -170,6 +172,8 @@ $(document).ready(function() {
         function sortByScore(){
             var rows, score1, score2, table, i, hasSorted, compareValue;
             table = document.getElementById("mainGameTable");
+            $("#sortName").removeClass("sortDes");
+            $("#sortScore").addClass("sortDes");
             hasSorted = true;
             while(hasSorted){
                 hasSorted = false;
