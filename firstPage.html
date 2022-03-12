@@ -47,11 +47,27 @@ $(document).ready(function() {
         });
 
 
-        $(".dltbutton").click(function() {
+        $(".dltbutton").click(function() {              //Delete Function
             $(this).parent().parent().remove();
         });
 
 
+
+        //Functions for Sorting by Rating and by Name:
+
+        $('#rtbtn').click(function(){
+            sortByScore();
+        })
+
+        $('#nmbtn').click(function(){
+            sortByName();
+        })
+
+        //Function to show us the About page
+
+        $('#abtbtn').click(function() {
+            
+        });
 
 
 
@@ -80,6 +96,12 @@ $(document).ready(function() {
 
         <button id ="addbtn"type="button" class= "btn btn-outline-primary">Add</button> 
 
+        <button id="rtbtn"type="button" class= "btn btn-outline-primary">Sort by Rate</button>
+
+        <button id="nmbtn"type="button" class= "btn btn-outline-primary">Sort by Name</button>
+
+        <a href="about.html">About page!</a>
+
     </div>
     
 
@@ -98,7 +120,7 @@ $(document).ready(function() {
 
             <tr>
                 <td>League Of Legends</td>
-                <td>85</td>
+                <td>55</td>
                 <td>
                     <button class="dltbutton" type="button" class="btn btn-outline-primary">Delete</button>
                 </td>
@@ -106,7 +128,7 @@ $(document).ready(function() {
 
             <tr>
                 <td>Bague Of Legends</td>
-                <td>85</td>
+                <td>95</td>
                 <td>
                     <button class="dltbutton" type="button" class="btn btn-outline-primary">Delete</button>
                 </td>
@@ -114,7 +136,7 @@ $(document).ready(function() {
 
             <tr>
                 <td>Keague Of Legends</td>
-                <td>85</td>
+                <td>25</td>
                 <td>
                     <button class="dltbutton" type="button" class="btn btn-outline-primary">Delete</button>
                 </td>
