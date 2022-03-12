@@ -11,13 +11,13 @@ table, th{
     margin: 0 auto !important;
 }
 
-<<<<<<< HEAD
+HEAD
 .carousel-inner img{
     height: 60vh;
     
 }
 
-=======
+
 #headGameTable{
     border: 3px solid black;
 }
@@ -45,4 +45,4 @@ table, th{
     top: 15px;
     right: -5px;
 }
->>>>>>> 3f778ba574d7285aa98cf5d29c4dbfe20dc0675e
+
