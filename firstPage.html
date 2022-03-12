@@ -36,26 +36,23 @@
 $(document).ready(function() {
 
 
-        $(".dltbutton").click(function() {
-            console.log("sdfsdf")
-    
-        });
-
-        $("#addbtn").click(function() {
-            var name = $('#gameTitle').val();
-            var rate = $('#rating').val();
-            var row = "<tr><td>"
+        $("#addbtn").click(function() {                 //Function to add a row
+            var name = $('#gameTitle').val();           //This is the gameTitle field the user inputs
+            var rate = $('#rating').val();              //This is the Rate field the user inputs
+            var row = "<tr><td>"                        //We basically "recreate" the row as we need originally and pass the variables.
                  + name + "</td><td>"
                  + rate + "</td><td>"
-                 + '<button class="dltbutton" type="button">Delete</button>'  + "</td></tr>";
-            $('#tableTest').append(row);
+                 + '<button class="dltbutton" type="button" class="btn btn-outline-primary">Delete</button>'  + "</td></tr>";
+            $('#tableTest').append(row);                //Adds the row with the user input values inside of it.
+        });
+
+
+        $(".dltbutton").click(function() {
+            $(this).parent().parent().remove();
         });
 
 
 
-        /*var row = "<tr><td>"
-            + name + "</td><td>"
-                 + rate + "</td></tr>";*/
 
 
 });
