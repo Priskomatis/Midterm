@@ -84,4 +84,10 @@ table, th{
 
 footer {
     display: block;  
+    
+}
+footer p {
+    color: black;
+    background-color: rgb(196, 185, 185);
+    width: 200px;
 }
