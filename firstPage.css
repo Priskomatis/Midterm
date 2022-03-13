@@ -45,3 +45,33 @@ table, th{
     right: -20px;
 }
 
+
+.headMenu{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    position: fixed;
+    background-color: gray;
+    top: 20px;
+    width: 40%;
+    border: 10px solid black;
+    border-radius: 20px;
+    left: 0px;
+    right: 0px;
+
+}
+
+.headMenu a{
+    position: relative;
+    text-align: center;
+    padding: 13px;
+    width: 50%;
+}
+
+.headMenu a:hover{
+    background-color: red;
+}
+
+.Header{
+    margin-top: 80px;
+}
