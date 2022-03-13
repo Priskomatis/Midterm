@@ -66,6 +66,8 @@ table, th{
     text-align: center;
     padding: 13px;
     width: 50%;
+    text-decoration: none;
+    color: #000;
 }
 
 .headMenu a:hover{
@@ -73,5 +75,9 @@ table, th{
 }
 
 .Header{
+    margin-top: 80px;
+}
+
+#myCarousel{
     margin-top: 80px;
 }
