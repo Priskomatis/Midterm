@@ -47,8 +47,8 @@ $(document).ready(function() {
         });
 
 
-        $(".dltbutton").click(function() {              //Delete Function
-            $(this).parent().parent().remove();
+        $("#mainGameTable").on('click', '.dltbutton', function() {              //Delete Function
+            $(this).closest('tr').remove();
         });
 
 
