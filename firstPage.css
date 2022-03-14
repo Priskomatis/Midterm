@@ -25,27 +25,26 @@ table, th{
     border: 3px solid black;
 }
 
-.sortAsc{
-    width: 0; 
-    height: 0; 
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid black;
+.noSort{
+    width: 10px;
+    height: 5px;
+    background-color: darkred;
     position: relative;
-    top: -15px;
-    right: -20px;
-    
+    float: right;
+    top:10px;
+
 }
 
 .sortDes{
+    float: right;
     width: 0;
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 10px solid #000;
+    border-top: 10px solid darkred;
     position: relative;
-    top: 15px;
-    right: -20px;
+    top: 10px;
+
 }
 
 

@@ -97,8 +97,8 @@ $(document).ready(function() {
         <thead id="headGameTable">
 
             <tr>
-                <th scope="col" onclick="sortByName()">Game Title<i id="sortName"></i></th>     
-                <th scope="col" onclick="sortByScore()">Rating<i id="sortScore"></i></th>
+                <th scope="col" onclick="sortByName()">Game Title<div id="sortName" class="noSort"></div></th>     
+                <th scope="col" onclick="sortByScore()">Rating<div id="sortScore" class="noSort"></div></th>
                 <!--Ids are used to add classes through scrips-->
                 <th scope="col"> Delete</th>
             </tr>
@@ -156,6 +156,8 @@ $(document).ready(function() {
             var rows, name1, name2, table, i, hasSorted, compareValue;
             table = document.getElementById("mainGameTable");
             $("#sortScore").removeClass("sortDes");
+            $("#sortScore").addClass("noSort");
+            $("#sortName").removeClass("noSort");
             $("#sortName").addClass("sortDes");
             hasSorted = true;
             while(hasSorted){
@@ -185,6 +187,8 @@ $(document).ready(function() {
             var rows, score1, score2, table, i, hasSorted, compareValue;
             table = document.getElementById("mainGameTable");
             $("#sortName").removeClass("sortDes");
+            $("#sortName").addClass("noSort");
+            $("#sortScore").removeClass("noSort");
             $("#sortScore").addClass("sortDes");
             hasSorted = true;
             while(hasSorted){
