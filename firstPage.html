@@ -84,7 +84,18 @@ $(document).ready(function() {
         <input type="text" id="gameTitle" placeholder="Game Title"/>
 
         <label for="rating"> Game Rating: </label>
-        <input type="text" id="rating" placeholder="Game rating"/>
+        <input type="number" id="rating" placeholder="1-100"/>          <!--Number type so that the user cannot type strings-->
+        
+        <!--Script to validate only 1-100 numbers in the Rating-->
+        <script>
+            $('#rating').keyup(function(){                  //When the user finish typing the number, if they have typed a number greater than 100 or less than 0 the page will send
+                if ($(this).val() > 100 || ($(this).val() < 0) ){                   //a trigger warning telling them that the max is 100 and will replace the value to 100.
+                    alert("No numbers above 100");                              
+                    $(this).val('100');
+                }
+            });
+        </script>
+
 
         <button id ="addbtn"type="button" class= "btn btn-outline-primary">Add</button> 
 
